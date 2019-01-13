@@ -3,6 +3,7 @@ MAINTAINER Alexei Znamensky <russoz@gmail.com>
 
 RUN apk add --no-cache openjdk8 wget stow bash \
   && wget -nv https://marketplace.atlassian.com/download/plugins/atlassian-plugin-sdk-tgz -O /sdk.tar.gz
+ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk/
 
 RUN mkdir /project /usr/local/stow /.m2 \
   && tar xvfz /sdk.tar.gz -C /usr/local/stow \
