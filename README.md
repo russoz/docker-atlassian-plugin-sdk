@@ -20,6 +20,7 @@ tutorial to get a primer on its usage.
 * No setup necessary, just execute `atlas.sh`
 * Utilize the user's Maven configuration out-of-the-box (when using the `atlas.sh` script), dramatically improving
   the execution time after the first run
+* Automatic publishing of port 2990 when command is *run* or *atlas-run*
 * Based on Alpine Linux => very small disk footprint
 
 # To-Do
