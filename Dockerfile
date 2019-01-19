@@ -1,7 +1,7 @@
 FROM alpine
 MAINTAINER Alexei Znamensky <russoz@gmail.com>
 
-RUN apk add --no-cache openjdk8 wget stow bash \
+RUN apk add --no-cache openjdk8 wget stow bash screen \
   && wget -nv https://marketplace.atlassian.com/download/plugins/atlassian-plugin-sdk-tgz -O /sdk.tar.gz
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk/
 
